@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.stripeCheckoutBtn{
+  font-size: 2vw;
+  padding: 1vw;
+  border: none;
+  border-radius: 1vw;
+  background-color: red;
+  color: white;
+}
+
+.paymentForm{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2vw;
+  color: white;
+}
+
+input{
+  border: none;
+  border-bottom: 0.1vw solid #171717;
+  outline: none;
+  font-size: 1vw;
+}
+
+button{
+  border-radius: 10vw;
+  border: none;
+  background-color: rgb(2, 140, 204);
+  color: white;
+  width: fit-content;
+  font-size: 1vw;
+  padding: 1vw;
+  cursor: pointer;
+}
+
+
+.successDiv{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+.successDiv>span{
+  color: #171717;
+  font-weight: bolder;
+  font-size: 3vw;
+  padding: 1vw;
+  border-radius: 10vw;
+
+}
