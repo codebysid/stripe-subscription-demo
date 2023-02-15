@@ -3,11 +3,12 @@ const express=require('express')
 const cors=require('cors')
 const stripe=require('stripe')(process.env.STRIPE_SECRET)
 const { v4: uuidv4 } = require('uuid');
-
+const helmet =require('helmet')
 const app=express()
 
 app.use(express.json())
 app.use(cors())
+app.use(helmet())
 
 const store={
     name:"iPangram News Letter",
